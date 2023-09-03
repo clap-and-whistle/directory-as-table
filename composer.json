@@ -1,0 +1,33 @@
+{
+    "name": "cw/directory-as-table",
+    "description": "DBテーブルに格納するような情報を、ディレクトリで簡易表現してみるPHPコード例",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "clap-and-whistle",
+            "email": "kimita@clap-and-whistle.page"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cw\\DirAsTable\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cw\\DirAsTable\\": [
+                "tests/"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit --color --testdox"
+    }
+}
